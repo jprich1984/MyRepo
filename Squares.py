@@ -1,2 +1,9 @@
-for i in range(20):
-	print(i**2)
+
+
+def Squares(n):
+	L=[]
+	for i in range(n):
+		L.append(i**2)
+return L
+
+print(Squares(10))		
