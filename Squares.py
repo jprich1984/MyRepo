@@ -1,4 +1,5 @@
 
+import sys
 
 def Squares(n):
 	L=[]
@@ -6,4 +7,4 @@ def Squares(n):
 		L.append(i**2)
 	return L
 
-print(Squares(10))		
+print(Squares(int(sys.argv[1])))		
