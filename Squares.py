@@ -9,10 +9,17 @@ def squares(n,fn=lambda x: x**2):
 
 def square(n):
 	return n**2
-print(f'Squares from 0 to {sys.argv[1]}:{squares(int(sys.argv[1]))}')
+
 
 def sigmoid(x,a=1):
 	return 1/(1+np.exp(-a*x))
 
-print(f'Scaled Sigmoid of {sys.argv[1]}: {sigmoid(int(sys.argv[1]))}')	
+def sum_of_squares(n):
+        return n*(n+1)*(2*n+1)/6
+
+print(f'Scaled Sigmoid of {sys.argv[1]}: {sigmoid(int(sys.argv[1]))}')
+
+print(f'Squares from 0 to {sys.argv[1]}:{squares(int(sys.argv[1]))}')
+
+print(f'Sum of Squares from 0 to {sys.argv[1]}:{sum_of_squares(int(sys.argv[1]))}')
 			
