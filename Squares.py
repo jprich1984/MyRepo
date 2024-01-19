@@ -23,3 +23,4 @@ print(f'Squares from 0 to {sys.argv[1]}:{squares(int(sys.argv[1]))}')
 
 print(f'Sum of Squares from 0 to {sys.argv[1]}:{sum_of_squares(int(sys.argv[1]))}')
 			
+print('Updated')
