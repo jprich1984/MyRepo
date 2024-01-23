@@ -1,0 +1,78 @@
+new text in this file
+More lines
+tomorrow
+tommorow
+tomorrow
+tomorrow
+Constaninople
+Constanople
+Constantinople
+Constantly
+consistently good or bad
+ |grep "[.Con]"
+THANK YOU Tomorrow Good 1
+THANK YOU Tomorrow Good 1
+one more instance of Tommorow Good 1
+even if Mispell tommorrow I want to know about it Good 1
+the goal was to find all instances of lines that contain good tomorrow and 1 regardless of speelling
+command that got it done cat P_file.txt | grep -E t?o+m?o?r?ro+w+| grep -E g?o+o+d+| grep 1>>CommandInfo.txt
+so the p just prints the line that was matched cat P_file.txt| sed -n '/tomorrow/ p'
+the s in sed like s'/thing/thingtosub/'
+one more instance of Tommorow Good 1
+instance of bad tommorow 44
+instance of good tommorow but 33
+use caret (^) for beginning of line $ end of line or match at end of line 
+get all lines that start with T grep ^[T] P_file.txt>>CommandsInfo.txt
+note that these are pertaining to the start of a new line
+like this will give you lines that end in g
+grep g
+notice that the lines end in g
+$ denotes the end of the line
+I keep overwriting this file so that is bad 24
+so the dot is important that last one gave every line that contained the test writing with anything before it
+But cant figure out how to give it starting characters then the dot then the ending characters
+THANK YOU Tomorrow Good 1
+THANK YOU Tomorrow Good 1
+Tomorrow bad 1
+one more instance of Tommorow Good 1
+even if Mispell tommorrow I want to know about it Good 1
+instance of bad tommorow 44
+instance of good tommorow but 33
+the goal was to find all instances of lines that contain good tomorrow and 1 regardless of speelling
+so how to i put the to in front of it
+grep [^[:space:]]row P_file.txt>>CommandInfo.txt
+echo go row your boat>>P_file.txt
+THANK YOU Tomorrow Good 1
+THANK YOU Tomorrow Good 1
+Tomorrow bad 1
+one more instance of Tommorow Good 1
+even if Mispell tommorrow I want to know about it Good 1
+instance of bad tommorow 44
+instance of good tommorow but 33
+the goal was to find all instances of lines that contain good tomorrow and 1 regardless of speelling
+Should be nothing about rowing boats
+ grep sp*lling P-file.txt
+maybe the star can help with everything
+THE STAR
+With Massive exclamation points
+THANK YOU Tomorrow Good 1
+THANK YOU Tomorrow Good 1
+Tomorrow bad 1
+one more instance of Tommorow Good 1
+even if Mispell tommorrow I want to know about it Good 1
+instance of bad tommorow 44
+instance of good tommorow but 33
+the goal was to find all instances of lines that contain good tomorrow and 1 regardless of speelling
+ grep or*ow P_file.txt>>CommandInfo.txt
+okay escape characters, i couldn't write the exclamation points
+echo THE STAR!
+but the backslash is still there
+ curl allows you to download files from the web using url link to the file curl -O https://archive.ics.uci.edu/static/public/53/iris.zip
+so what do we haver here: -oE /w+ makes each word a line, then uniq counts each word and the -c parameter gives the count, sort -nr, the n is numeric and the r is reverse.        COMMAND:             curl  https://www.gutenberg.org/cache/epub/72776/pg72776.txt| grep -oE w+|sort|uniq -c|sort -nr
+curl without the -o parameter just prints the contents of the file to std output
+3311 the
+1800 and
+1439 of
+1148 to
+1072 a
+ 818 is
