@@ -1,0 +1,6 @@
+Scrape yelp reviews of restaurants, then do an NLP to categorize the reason for good/bad review i.e ('service',', 'taste','ambiance') 
+
+or 
+we scrape yelp reviews and just do a descriptive analysis of the language that is used to describe diffent types of cuisine.  e.g the top 10 descriptive words to describe italian food are ....
+
+Train a model to classify the general reason for complaints in this csv complaints_processed.csv
