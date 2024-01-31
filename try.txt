@@ -1,0 +1,55 @@
+# file the  https://www.gutenberg.org/files/58785/58785-0.txt
+
+if [ $# -ne 1 ]
+   then
+       echo "Please provide a txt file url"
+       echo "usage ./calculate_basic_stats.sh  url"
+       #exit with error
+       exit 1
+fi   
+
+echo  "############### Statistics for file  ############### "
+
+# Q1(.5 point) write  positional parameter after echo to print its value. It is the file url used by curl command.
+
+echo 
+
+
+# sort based on multiple columns
+#Q2(2= 1+1 for right sorting of each columns). Write last sort command options so that first column(frequencies) is
+#sorted via numerical values and
+#second column is sorted by reverse alphabetical order
+
+sorted_words=`curl -s $1|tr [A-Z] [a-z]|grep -oE "\w+"|sort|uniq -c|sort -nr|sort -k1n,1 -k2r,2r`
+
+
+total_uniq_words=`echo "$sorted_words"|wc -l`
+echo "Total number of words = $total_uniq_words"
+
+
+#Q3(1=.5+.5 points ) Complete the code in the following echo statements to calculate the  Min and Max frequency with respective word
+#Hint:  Use sorted_words variable, head, tail and command susbtitution
+echo -e  "${sorted_words}"|head -1| awk '{print "Min Frequency and Word: " $1 " "  $2}' 
+echo -e  "${sorted_words}"|tail -1| awk '{print "Max Frequency and Word: " $1 " "  $2}'
+
+parity= echo "$((total_uniq_words%2))"
+
+echo " $parity"
+
+#Median calculation
+
+#Q4(2=1(taking care of even number of frequencies)+1 points(right value of median)). Using sorted_words,
+#write code for median frequency value calculation. Print the value of the median with an echo statement, stating
+# it is a median value.
+#Code must check even or odd  number of unique words. For even case median is the mean of middle two values,
+#for the odd case, it is middle value in sorted items.
+if [$parity -eq 0]
+ then
+        mid1= echo "$((total_uniq_words/2))"
+	mid2= echo "$((total_uniq_words/2+1))"
+        med_pos= echo "$((mid1+mid2))"
+        echo "Median Position $med_pos"
+ else
+        med_pos=echo "$((total_uniq_words/2))"
+        echo "Median Position $med_pos"       
+# Mean value calculation
