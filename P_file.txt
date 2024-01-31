@@ -1,0 +1,47 @@
+Please Please Me who yeah
+THANK YOU Tomorrow Good 1
+snake 44 bad
+snake 44 bad
+THANK YOU Tomorrow Good 1
+not very good and constaninople
+But sometimes we get Today bad 33
+Tomorrow bad 1
+I keep overwriting this file so that is bad 24
+one more instance of Tommorow Good 1
+even if Mispell tommorrow I want to know about it Good 1
+how about one more no good 4 today
+let's listen to this guy bad 24
+Previous character can exist once or none ?
++ charcter before the plus sign must exist one or more times
+instance of bad tommorow 44
+instance of good tommorow but 33
+the goal was to find all instances of lines that contain good tomorrow and 1 regardless of speelling
+results sent to file CommandInfo.txt
+Task: Send to a file but only if asked nicely:Do not sent the task description ot the file
+Send me to a file Now
+I need to go to a file what is taking so long
+May I go to a file please
+get me in that file biatch
+I would love to go to a file, i would appreciate it if you sent me, thank you
+how many times do I have to ask to get to a file
+Could I go go a file please
+i'm very Pleased to be a part of this file but I don't want to go to another one
+Please fires and fliers and filters and thank you and love
+Please fires and fliers and filters and thank you and love
+r is a sperator in awk
+fs is field seperator
+Prints only the 3rd column awk 'BEGIN {FS=OFS=,} NR>1 {print }' movies.csv
+sed is string edition 
+ this prints the file without the header awk 'NR>1 {print -bash}' movies.csv
+so the dot is important that last one gave every line that contained the test writing with anything before it
+go row your boat
+3 the then
+333 and some
+ 12
+     322 the then
+    3 thanks
+ 6 you and me
+16 smart
+             the to p
+           14 students
+ 4 the student
